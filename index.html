@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Homework 9</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--My navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Devan Martin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="nav-menu" class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      </ul>
+      <form class="d-flex" role="search"> <!--My Resume Download button-->
+        <a id="resume-download" href="Resume.pdf" class="btn btn-outline-success" type="submit" download>Resume Download</a>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container mt-5"> <!--I use a linear gradient for my header-->
+  <div class="header row align-items-center justify-content-center text-center fs-1 bg-gradient-custom">
+    Devan Martin
+  </div>
+  <p id="output-area"></p>
+</div>
+<div class="container mt-5">
+  <div class="row align-items-center justify-content-center text-center">
+    <!--My Who I Am section. -->
+    <div id="me" class="col-md-8">
+      <h1 class="fs-1">Who I Am</h1>
+      <p class="fs-6">
+        Hi there! My name is Devan and I am a sophomore at Northern Arizona University. I haven't done a full four years in just one high school or college, rather, I have moved around schools. For example, I only attended Cactus Shadows High School for my first two years of high school. Then, I moved to Gateway Academy. I decided to do only one year at community college because it wasn't giving me the college experience I had hoped for. So, I transfered here to NAU.
+        In my free time, I enjoy coding, hiking, and watching YouTube. I am (sort of) proficient in HTML and CSS, and I am practicing JavaScript in my free time. I'm excited to learn more about these languages in this course. On YouTube, I like watching videos about politics and crime. A fact about me is that I was born and raised in the Phoenix area. I am glad to be out of there so I can experience the cooler weather and nature in Flagstaff.
+      </p>
+    </div>
+    
+    <div class="col-md-4 text-center">
+      <img class="w-50 rounded" src="image-of-me.png" alt="An image of me, Devan">
+    </div>
+    
+  </div>
+</div>
+  <!--My education section. I use a Bootstrap table-->
+    </div>
+    <div id="education">
+      <div id="experience-table"></div>
+      <div id="education-table"></div>
+    </div>
+    <!--I use two Bootstrap cards for my projects -->
+<div class="container mt-5">
+  <h1 id="projects" class="fs-1 text-center mt-5 mb-5">Projects</h1>
+  <div class="row justify-content-center">
+    <section id="projects-section">
+      <p>Previous Project Portfolio Status: <strong id="project1-status"></strong></p>
+      <p>Older Project Portfolio Status: <strong id="project2-status"></strong></p>
+      <p>Ongoing Project Status: <strong id="project3-status"></strong></p>
+        </section>
+
+  </div>
+</div>
+<!--My skills.-->
+<div class="container mt-5">
+  <h1 id="skills" class="fs-1 text-center mt-5 mb-5">Skills</h1>
+  <div class="container text-center">
+    <div class="fs-4" id="output-container">
+      <div class="col">
+        <div class="row-sm fs-4 skill">
+          HTML
+          <button class="delete">Delete</button>
+        </div>
+        <div class="row-sm fs-4 skill">
+          CSS
+          <button class="delete">Delete</button>
+        </div>
+        <div class="row-sm fs-4 skill">
+          Bootstrap
+          <button class="delete">Delete</button>
+        </div>
+        <div class="row-sm fs-4 skill">
+          JavaScript
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="form-container">
+  <form id="skill-form">
+    <label for="skill">Type in a skill:</label>
+    <input id="skill" type="text">
+    <input id="submit" type="submit" value="submit">
+  </form>
+</div>
+<h3 class="text-center mt-5">Number of times the resume button has been clicked:</h3>
+<div class="text-center fs-3" id="button-click-container">
+</div>
+<!--My Footer -->
+<div class="container mt-5">
+  <div class="header row align-items-center justify-content-center text-center fs-1 bg-gradient-custom">
+    Thank you for visiting!
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
